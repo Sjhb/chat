@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link type="text/css" rel="stylesheet" href="../style/main.css">
+    <script src="/javascript/socket.io.js"></script>
+</head>
+<body>
+    <div id="shade" class="shade" >
+        <div>
+            <input class="shade_input" id="uname" placeholder="Sign your name">
+            <button class="button" id="submitUname" onclick="CHAT.submitUname('uname')">Submit</button>
+        </div>
+    </div>
+    <div class="head">
+        <p style="font-size: 60px">一面山城</p>
+    </div>
+    <div class="chat_area" id="chat_area">
+        <div class="chat_content" id="chat_content">
+        </div>
+    </div>
+    <div class="input_area">
+        <input type="text" name="value" class="input" id="input_message"><input type="button" onclick="CHAT.submitMessage('input_message')" class="button right" value="发送">
+    </div>
+<script type="text/javascript" src="../javascript/chat.js"></script>
+</body>
+</html>

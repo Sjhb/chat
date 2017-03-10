@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    border:0;
+    outline: 0;
+    font-size: 50px;
+}
+container{
+    height: 100%;
+    display: block;
+    padding: 155px 0 155px 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+    background-color: #E8F1F5;
+    padding: 155px 0 155px 0;
+}
+.head{
+    top: 0;
+    position: fixed;
+    height: 150px;
+    width: 100%;
+    background-color: aqua;
+    box-shadow: 2px 5px 1px 0px rgba(0,0,102,0.1);
+    text-align: center;
+}
+.chat_area{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+.input_area{
+    position: fixed;
+    height: 150px;
+    width: 100%;
+    bottom: 0;
+    background-color: white;
+ }
+
+.placeholder{
+    width: 5%;
+    height: 100%;
+    overflow: hidden;
+}
+.chat_content{
+    width: 90%;
+    overflow: scroll;
+}
+
+.chat{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.icon{
+    border-radius: 30px;
+    max-height: 100px;
+}
+.icon-img{
+    max-width: 100px;
+
+}
+.icon-name{
+    max-width: 150px;
+    overflow: hidden;
+    padding-top: 15px;
+    max-height: 80px;
+}
+.words{
+    max-width: 70%;
+    background-color: white;
+    font-size: xx-large;
+    border-radius: 20px;
+    word-break: break-all;
+    word-wrap: break-word;
+    padding: 20px 15px;
+}
+.triangle{
+    margin-top:15px;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+.triangle.triangle-left{
+    margin-left: 10px;
+    border-right: 30px solid white;
+}
+.triangle.triangle-right{
+    margin-top:15px;
+    border-left: 30px solid white;
+}
+.input{
+    background-color: white;
+    padding: 20px 20px 5px 20px;
+    border-bottom: 5px solid #676f73;
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 65%;
+}
+.button{
+    outline: none;
+    font-size: xx-large;
+    padding: 20px 60px;
+    border-radius: 30px;
+    background-color: aqua;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+.button:active{
+    background-color: cornflowerblue;
+}
+.right{
+    float: right;
+}
+
+.shade{
+    z-index: 1000;
+    position: fixed;
+    background-color: #676f73;
+    opacity: 0.5;
+}
+
+.shade_input{
+    width: 500px;
+    height: 100px;
+    margin-top: 200px;
+    margin-left: 200px;
+    border-radius: 20px;
+    padding: 10px;
+}
