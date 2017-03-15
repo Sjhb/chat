@@ -3,7 +3,12 @@
     padding: 0;
     border:0;
     outline: 0;
-    font-size: 50px;
+    font-size: 40px;
+    font-family: Noto;
+}
+@font-face{
+    font-family: Noto;
+    src:url("../font/NotoSansHans-Medium.otf");
 }
 container{
     height: 100%;
@@ -22,9 +27,9 @@ body{
     position: fixed;
     height: 150px;
     width: 100%;
-    background-color: aqua;
-    box-shadow: 2px 5px 1px 0px rgba(0,0,102,0.1);
+    background: url("../image/background.jpg") 47% 11%;
     text-align: center;
+    color: white;
 }
 .chat_area{
     width: 100%;
@@ -108,7 +113,7 @@ body{
     font-size: xx-large;
     padding: 20px 60px;
     border-radius: 30px;
-    background-color: aqua;
+    background-color: #1b18c1;
     margin-top: 30px;
     margin-right: 30px;
 }
@@ -122,15 +127,15 @@ body{
 .shade{
     z-index: 1000;
     position: fixed;
-    background-color: #676f73;
+    background-color: rgba(227, 147, 78, 0.31);
     opacity: 0.5;
 }
 
 .shade_input{
     width: 500px;
-    height: 100px;
+    height: 80px;
     margin-top: 200px;
-    margin-left: 200px;
+    margin-left: 150px;
     border-radius: 20px;
     padding: 10px;
 }
