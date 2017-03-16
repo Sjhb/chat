@@ -3,7 +3,7 @@
     padding: 0;
     border:0;
     outline: 0;
-    font-size: 40px;
+    font-size: 35px;
     font-family: Noto;
 }
 @font-face{
@@ -43,7 +43,7 @@ body{
     height: 150px;
     width: 100%;
     bottom: 0;
-    background-color: white;
+    /*background-color: white;*/
  }
 
 .placeholder{
@@ -103,19 +103,21 @@ body{
 .input{
     background-color: white;
     padding: 20px 20px 5px 20px;
-    border-bottom: 5px solid #676f73;
     margin-left: 30px;
     margin-top: 30px;
-    width: 65%;
+    width: 70%;
+    border-radius: 20px;
+    border: 2px solid rgba(238, 187, 89, 0.51);
 }
 .button{
     outline: none;
     font-size: xx-large;
-    padding: 20px 60px;
-    border-radius: 30px;
-    background-color: #1b18c1;
+    padding: 20px 50px;
+    border-radius: 20px;
+    background-color: #be18c1;
     margin-top: 30px;
     margin-right: 30px;
+    color:white;
 }
 .button:active{
     background-color: cornflowerblue;
