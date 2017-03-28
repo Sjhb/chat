@@ -37,13 +37,15 @@ function createSocket(server) {
             socket.on('message', function(data){
                 Socket.sockets.emit("notice", {name:uname,'message':data});
             });
+            //设定名字
             socket.on('setName',function (name) {
                     if (contains(onlineUsers,name)){
                         socket.emit('setName',{'cod':401,'message':'用户名已经存在'});
                     }else {
                         onlineUsers.push(name);
-                        socket.emit('setName',{'cod':200,'message':onlineCount});
                         uname=name;
+                        socket.emit('setName',{'cod':200,'message':onlineCount});
+                        Socket.sockets.emit("join", uname);
                         onlineCount=onlineCount+1;
                     };
                 })
